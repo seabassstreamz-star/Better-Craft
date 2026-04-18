@@ -1,0 +1,44 @@
+[18Apr2026 16:39:58.390] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatadev, --assetIndex, 17, --assetsDir, C:\\Users\\sebas\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.224, --fml.neoFormVersion, 20240808.144430, --mod, bettercraft, --all, --output, C:\\Users\\sebas\\Downloads\\bettercraft-template-1.21.1\\src\\generated\\resources, --existing, C:\\Users\\sebas\\Downloads\\bettercraft-template-1.21.1\\src\\main\\resources]
+[18Apr2026 16:39:58.394] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.10+7-LTS
+[18Apr2026 16:39:58.396] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.10 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[18Apr2026 16:39:58.520] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatadev
+[18Apr2026 16:39:58.578] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/sebas/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[18Apr2026 16:39:58.961] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[18Apr2026 16:39:58.963] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		BetterCraft 1.0.0 (bettercraft)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.224 (neoforge)
+[18Apr2026 16:39:59.727] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatadev' with arguments [--gameDir, ., --assetsDir, C:\Users\sebas\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --mod, bettercraft, --all, --output, C:\\Users\\sebas\\Downloads\\bettercraft-template-1.21.1\\src\\generated\\resources, --existing, C:\\Users\\sebas\\Downloads\\bettercraft-template-1.21.1\\src\\main\\resources]
+[18Apr2026 16:39:59.997] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [bettercraft]
+[18Apr2026 16:40:00.011] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[18Apr2026 16:40:03.593] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.224, for MC 1.21.1
+[18Apr2026 16:40:03.612] [modloading-worker-0/ERROR] [net.neoforged.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: bettercraft, class com.seabassstreamz.BetterCraft.BetterCraft
+java.lang.ExceptionInInitializerError: null
+	at TRANSFORMER/bettercraft@1.0.0/com.seabassstreamz.BetterCraft.BetterCraft.<init>(BetterCraft.java:47) ~[%23191!/:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:115) ~[loader-4.0.42.jar%23146!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.42.jar%23146!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.42.jar%23146!/:4.0]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+Caused by: net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: bettercraft:Strawberry
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:311) ~[neoforge-21.1.224-merged.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.createUntrusted(ResourceLocation.java:58) ~[neoforge-21.1.224-merged.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(ResourceLocation.java:62) ~[neoforge-21.1.224-merged.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.224/net.neoforged.neoforge.registries.DeferredRegister.register(DeferredRegister.java:230) ~[neoforge-21.1.224-merged.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.224/net.neoforged.neoforge.registries.DeferredRegister$Items.register(DeferredRegister.java:502) ~[neoforge-21.1.224-merged.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.224/net.neoforged.neoforge.registries.DeferredRegister$Items.register(DeferredRegister.java:515) ~[neoforge-21.1.224-merged.jar%23190!/:?]
+	at TRANSFORMER/bettercraft@1.0.0/com.seabassstreamz.BetterCraft.item.ModItems.<clinit>(ModItems.java:14) ~[?:?]
+	... 15 more
+[18Apr2026 16:40:03.751] [main/FATAL] [net.neoforged.fml.ModLoader/LOADING]: Failed to wait for future Mod Construction, 1 errors found
